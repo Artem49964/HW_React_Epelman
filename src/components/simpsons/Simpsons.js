@@ -17,7 +17,7 @@ const SimpsonsMap = () => {
             status: "Alive",
             species: "Human",
             gender: "Male",
-            image: "https://rickandmortyapi.com/api/character/avatar/7.jpeg"
+            image: 'https://rickandmortyapi.com/api/character/avatar/7.jpeg'
         },
 
         {

@@ -1,6 +1,6 @@
 
 
-const simpsonDOM = ({arg:value}) => (
+const SimpsonDOM = ({arg:value}) => (
     <div className='container'>
 
         <div>id - {value.id}</div>
