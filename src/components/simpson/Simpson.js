@@ -1,16 +1,19 @@
 
-const Simpson = ({arg: simpsons}) => (
-    <div>
-        <div>id is - {simpsons.id}</div>
-        <div>name is - {simpsons.name}</div>
-    <div>species is - {simpsons.species}</div>
-    <div>gender is - {simpsons.gender}</div>
-    <div>image is - {simpsons.image}</div>
-    <div>status is - {simpsons.status}</div>
-        <br/>
+
+const simpsonDOM = ({arg:value}) => (
+    <div className='container'>
+
+        <div>id - {value.id}</div>
+        <div>name - {value.name}</div>
+        <div>species - {value.species}</div>
+        <div>gender - {value.gender}</div>
+        <div>image - {value.image}</div>
+        <div>status - {value.status}</div>
+
+
 
     </div>)
 
 
 
-export default Simpson
+export default simpsonDOM
