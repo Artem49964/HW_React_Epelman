@@ -1,27 +1,28 @@
 import './App.css';
 import React, {useEffect, useState} from "react";
-import Posts from "./components/Posts";
-import Button from "./components/Button";
+import Ships from "./components/Ships";
+import Ship from "./components/Ship";
 
 
 
-// 3. Третьим шагом мы добавим компонент Post в наш App (App будем наполнять только компонентами)
 function App() {
-
-    const lift = (obj) => {
-        console.log(obj);
-    }
-
 
 
 
     return (
+        <>
+            {
+                <Ships/>
+            }
 
-    <>
-        <Posts lift={lift}/>
-    </>
+        </>
+        )
 
-    )
+
+
+
+
+
 
 
 }
