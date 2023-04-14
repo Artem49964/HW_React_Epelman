@@ -1,19 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-import './components/simpsons/Simpsons'
+import React, {useEffect, useState} from "react";
+import Posts from "./components/Posts";
+import Button from "./components/Button";
 
-import SimpsonsMap from "./components/simpsons/Simpsons";
+
 
 
 function App() {
-  return (
-      <div>
 
-        <SimpsonsMap/>
 
-      </div>
 
-  );
+    return (
+
+
+
+    <>
+
+        <Posts/>
+        <Button/>
+
+    </>
+
+
+
+        )
+
+
 }
 export default App
-
