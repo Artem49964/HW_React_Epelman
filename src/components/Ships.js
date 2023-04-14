@@ -18,9 +18,7 @@ const Ships = ({ship}) => {
     return(
         <>
             {
-                ships.map(value => {
-                  <Ship value={value}/>
-                })
+                ships.map(value => <Ship value={value}/>)
 
             }
         </>

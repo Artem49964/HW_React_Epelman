@@ -8,10 +8,10 @@ const Ship = ({value}) => {
             <>
                     {
                             <div>
-                                    <p>value.flight_number</p>
-                                    <p>value.mission_name</p>
-                                    <p>value.launch_date_local</p>
-                                    <p>value.tbd</p>
+                                    <p>flight_number id - {value.flight_number}</p>
+                                    <p>mission_name - {value.mission_name}</p>
+                                    <p>launch_date_local - {value.launch_date_local}</p>
+
 
 
                             </div>
