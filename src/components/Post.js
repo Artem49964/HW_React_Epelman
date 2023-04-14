@@ -1,21 +1,27 @@
 import React from 'react';
 import Posts from "./Posts";
 
-const Post = ({value}) => {
+const Post = ({post, lift}) => {
 
-    <Posts/>
-
-    return (
-        <div>
+    return(
+       <>
             {
                 <div>
-                    <p> id is {value.id}</p>
-                    <p>title is - {value.title}</p>
+                    <p>post Id - {post.id}</p>
+                    <p>post Title - {post.title}</p>
+                    <button onClick={() => {
+                    lift(post)}
+                    }>Console details</button>
                 </div>
 
             }
-        </div>
-    );
+       </>
+    )
+
+
+
+
+
 };
 
 export default Post;
