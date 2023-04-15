@@ -12,9 +12,6 @@ function App() {
         console.log(obj);
     }
 
-
-
-
     return (
 
     <>
