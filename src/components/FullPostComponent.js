@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
-const FullPostComponent = () => {
+const FullPostComponent = ({}) => {i
+v
+    const [fillId, setFillId] = useState(null)
+
+    useEffect(() => {
+        setFillId(fillId)
+    },[])
+
     return (
         <div>
-            Full post info
+            {
+
+            }
         </div>
     );
 };

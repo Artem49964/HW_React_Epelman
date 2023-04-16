@@ -38,9 +38,11 @@
 }
 
 
+.leftDiv {
+  border: 1px solid red;
+}
 
-
-p {
-  margin: 10px;
+.rightDiv {
+  border: 1px solid black;
 }
 

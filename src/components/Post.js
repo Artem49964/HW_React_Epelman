@@ -1,16 +1,16 @@
 import React from 'react';
 import Posts from "./Posts";
 
-const Post = ({post, lift}) => {
+const Post = ({value, lift}) => {
 
     return(
        <>
             {
                 <div>
-                    <p>post Id - {post.id}</p>
-                    <p>post Title - {post.title}</p>
+                    <p>post Id - {value.id}</p>
+                    <p>post Title - {value.title}</p>
                     <button onClick={() => {
-                    lift(post)}
+                    lift(value)}
                     }>Console details</button>
                 </div>
 
