@@ -4,25 +4,28 @@ import Ship from "./Ship";
 const Ships = ({ship}) => {
 
 
+    const [ships, setShips] = useState([])
 
-              const [ships, setShips] = useState([])
-
-                useEffect(() => {
-                fetch('https://api.spacexdata.com/v3/launches/')
-                .then(value => value.json())
-                .then(ship => {
-                    setShips(ship)
+    useEffect(() => {
+        fetch('https://api.spacexdata.com/v3/launches/')
+            .then(value => value.json())
+            .then(ship => {
+                setShips(ship)
             })
-            },[])
+    }, [])
 
-    return(
-        <>
-            {
-                ships.map(value => <Ship value={value} key={value.id}/>)
 
-            }
-        </>
-    )
+        return (
+
+            <>
+                {
+                    ships.map(value => <Ship value={value} key={value.flight_number}/>)
+
+                }
+            </>
+
+        )
+
 
 
 }
