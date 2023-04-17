@@ -11,7 +11,7 @@ const Ship = ({value}) => {
 
                         <p>{value.launch_year}</p>
                         <p>{value.mission_name}</p>
-                        <img src={value.mission_patch_small}/>
+                        <img src={value.links.mission_patch_small}/>
                     </div>
 
                 }
