@@ -9,10 +9,13 @@ function App() {
 
 
 
+
+
     return (
         <>
+
             {
-                <Ships/>
+                <Ships />
             }
 
         </>
