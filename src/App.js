@@ -11,12 +11,9 @@ function App() {
     const [post, setPost] = useState(null)
 
     useEffect(() => {
-        const lift = (obj) => {
-            console.log(lift);
-        }
+       
 
     }, [])
-
 
     return (
         <>
