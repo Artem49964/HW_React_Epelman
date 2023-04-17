@@ -1,26 +1,32 @@
 import React, {useEffect, useState} from 'react';
 import User from "./User";
 
-const Users = ({lift}) => {
+const Users = () => {
 
-    const [user, setUser] = useState([])
+
+    const [users, setUsers] = useState([]);
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
-            .then(users => {
-                setUser(user)
-            },)
-    }, [])
+            .then(user => {
+                setUsers(user)
+            })
+
+    }, []);
+
+
 
     return (
-        <div>
-            {
-                user.map(response => <User user={user} lift={lift}/>)
 
-            }
-        </div>
-    );
+               <>
+                   {
+                users.map(user => <User value={user} key={users.id}/>)
+                   }
+
+                       </>
+
+    )
 };
 
 export default Users;

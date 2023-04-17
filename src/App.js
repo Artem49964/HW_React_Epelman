@@ -2,23 +2,31 @@ import './App.css';
 import React, {useEffect, useState} from "react";
 import Users from "./components/Users";
 import User from "./components/User";
+import UserPost from "./components/UserPost";
 
 
 
 
 function App() {
 
-    const lift = (lift) => {
-        console.log(<Users lift={lift}/>)
-    }
+        const lift = (obj) => {
+                console.log(obj);
+        }
 
 return (
-    <>
-        {
-            <User lift={lift} />
-        }
-    </>
+        <>
+            {
+                    <div>
+                            <Users/>
+                            <UserPost lift={lift}/>
+                   </div>
+
+
+
+            }
+
+        </>
 )
 
-}
+
 export default App
