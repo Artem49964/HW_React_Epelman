@@ -1,32 +1,30 @@
 import React, {useEffect, useState} from "react";
 
 
-const [post, setPost] = useState([])
 
-const UserPost = ({lift}) => {
 
-    fetch('https://jsonplaceholder.typicode.com/posts')
-        .then(response => response.json())
-        .then(post => {
-            setPost(post)
-        })
+const UserPost = ({lift, value}) => {
+
+    const [post, setPost] = useState([])
 
     useEffect(() => {
-        post.map(post => )
+
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then(post => {
+                setPost(post)
+            })
+
     }, [])
-
-
 
 
     return (
 
-
-
-
-
-        <div>
-
-        </div>
+        <>
+            {
+                post.map(post => post.body, value={lift})
+            }
+        </>
     );
 };
 

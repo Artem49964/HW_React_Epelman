@@ -10,23 +10,22 @@ import UserPost from "./components/UserPost";
 function App() {
 
         const lift = (obj) => {
-                console.log(obj);
+                console.log(obj)
         }
 
-return (
-        <>
-            {
-                    <div>
-                            <Users/>
-                            <UserPost lift={lift}/>
-                   </div>
+        return (
+            <>
+                    {
+                            <div>
+                                    <Users/>
+                                    <UserPost lift={lift}/>
+                            </div>
 
 
+                    }
 
-            }
-
-        </>
-)
-
+            </>
+        )
+}
 
 export default App

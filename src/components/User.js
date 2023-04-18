@@ -2,7 +2,7 @@ import React from 'react';
 import Users from "./Users";
 
 
-const User = ({value}) => {
+const User = ({value, lift}) => {
 
 const {id, name, username, email} = value;
 
@@ -14,7 +14,9 @@ const {id, name, username, email} = value;
                     <p>name - {name}</p>
                     <p>username - {username}</p>
                     <p>email - {email}</p>
-                    <button>Details</button>
+                    <button onClick={() => {
+                    lift(value)}
+                    }>Details</button>
                     <hr/>
                 </div>
             }
